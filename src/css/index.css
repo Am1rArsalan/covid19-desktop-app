@@ -1,0 +1,19 @@
+
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; 
+    box-sizing: inherit;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color :#95afc0;
+}
+  

@@ -1,0 +1,18 @@
+.brand{ 
+    position: fixed;
+    top: -5rem;
+    left: 0;
+    transform: rotate(-41deg) translateX(-12rem);
+    padding: .2rem;
+    width: 29rem;
+    text-align: center;
+    letter-spacing: .4rem;
+    line-height: 1.3rem;
+    font-size: 1.1rem;
+    font-family: monospace;
+    font-weight: 400;
+    background-color: #9575cd;
+    text-transform: uppercase;
+    color: #000642;
+    text-decoration: none;
+}

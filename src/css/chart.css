@@ -1,0 +1,17 @@
+.chart-title{ 
+    text-align : center ;
+}
+
+.selectors { 
+    display: flex ;
+    flex-flow:  row wrap ;
+    justify-content: space-between; 
+    align-items: stretch ;
+
+    padding: 1rem ;
+    margin-top: 1.5rem ;
+}
+
+.css-2b097c-container{
+    width: 10rem ;
+}

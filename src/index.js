@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter as Router, Route } from "react-router-dom";
-
 import App from "./components/App";
 
 ReactDOM.render(
@@ -11,6 +10,7 @@ ReactDOM.render(
         <App />
       )}
     />
-  </Router>,
+  </Router>
+  ,
   document.getElementById("root")
 );
