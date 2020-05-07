@@ -1,17 +1,51 @@
-.chart-title{ 
-    text-align : center ;
+.chart-title {
+  text-align: center;
 }
 
-.selectors { 
-    display: flex ;
-    flex-flow:  row wrap ;
-    justify-content: space-between; 
-    align-items: stretch ;
-
-    padding: 1rem ;
-    margin-top: 1.5rem ;
+.selectors {
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0;
+  align-items: stretch;
+  justify-content: space-around;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+.form_controller {
+  display: flex;
+  flex-basis: 25rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.css-2b097c-container {
+  width: 17rem;
 }
 
-.css-2b097c-container{
-    width: 10rem ;
+.chart-title {
+  font-size: 4.3rem;
+  background: #a770ef;
+  background: -webkit-linear-gradient(to right, #fdb99b, #cf8bf3, #a770ef);
+  background: linear-gradient(to right, #fdb99b, #cf8bf3, #a770ef);
+  background-size: 400% 400%;
+  background-repeat: repeat-x;
+
+  padding: 1rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: headingAnimation 2s ease infinite;
+}
+@keyframes headingAnimation {
+  0% {
+    background-position: 0%;
+  }
+
+  50% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: 0;
+  }
 }

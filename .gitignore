@@ -1,7 +1,7 @@
 node_modules/
 yarn-lock
 
-
+plugin.log
 /node_modules
 /.pnp
 .pnp.js

@@ -12,7 +12,7 @@ export default function (props) {
     const [confirmed, setConfirmed] = useState([]);
     const [dates, setDates] = useState([]);
     const [dataset, setDataset] = useState(null);
-    const [from, setFrom] = useState('2020-1-22');
+    const [from, setFrom] = useState('2020-1-30');
     const [to, setTo] = useState(formatDate(new Date()));
     let chartRef = useRef();
 
@@ -65,14 +65,17 @@ export default function (props) {
 
     return (
         <WithClass classes='mychart'>
-            <h1 className='chart-title'>
-                {props.chartTitle}
-            </h1>
-            <canvas
-                ref={chartRef}
-                id='canvas'
-                height='210'
-                width='500'></canvas>
+            <WithClass classes='chart-area'>
+                <h1 className='chart-title'>
+                    {props.chartTitle}
+                </h1>
+                <canvas
+                    ref={chartRef}
+                    id='canvas'
+                    height='50'
+                    width='200'></canvas>
+
+            </WithClass>
             <WithClass classes='selectors'>
                 <WithClass classes='form_controller'>
                     <Button
@@ -81,7 +84,7 @@ export default function (props) {
                     />
                 </WithClass>
                 <WithClass classes='form_controller'>
-                    <label className='form_controller__label'> From </label>
+                    <label className='form_controller__label'> From : </label>
                     <Select
                         value={{ value: from, label: from }}
                         onChange={(selected) => {
@@ -99,8 +102,9 @@ export default function (props) {
                         }
                     />
                 </WithClass>
+
                 <WithClass classes='form_controller'>
-                    <label className='form_controller__label'> To </label>
+                    <label className='form_controller__label'> To :</label>
                     <Select
                         value={{ value: to, label: to }}
                         onChange={(selected) => setTo(selected.value)}
@@ -115,6 +119,7 @@ export default function (props) {
                     />
                 </WithClass>
             </WithClass>
+
         </WithClass>
     );
 }
