@@ -9,7 +9,7 @@
   },
   "author": "AmirAhmadzadeh",
   "devDependencies": {
-    "electron": "^11.5.0"
+    "electron": "^13.6.6"
   },
   "dependencies": {
     "axios": "^0.19.2",
